@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relógio de Brasília</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="overlay"></div>
+
+  <main class="relogio-container">
+    <h1 class="titulo">Horário de Brasília</h1>
+    <p class="data" id="data">--/--/----</p>
+
+    <div class="cards">
+      <div class="card">
+        <span class="numero" id="horas">00</span>
+        <span class="label">Horas</span>
+      </div>
+      <span class="dois-pontos">:</span>
+      <div class="card">
+        <span class="numero" id="minutos">00</span>
+        <span class="label">Minutos</span>
+      </div>
+      <span class="dois-pontos">:</span>
+      <div class="card">
+        <span class="numero" id="segundos">00</span>
+        <span class="label">Segundos</span>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

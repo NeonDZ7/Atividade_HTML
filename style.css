@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  height: 100vh;
+  width: 100%;
+  background-image: url('https://images.pexels.com/photos/12355993/pexels-photo-12355993.jpeg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.relogio-container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+}
+
+.titulo {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.data {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card {
+  background: rgba(20, 20, 20, 0.75);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+  padding: 20px 30px;
+  min-width: 100px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.numero {
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.label {
+  display: block;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  opacity: 0.7;
+  margin-top: 4px;
+  text-transform: uppercase;
+}
+
+.dois-pontos {
+  font-size: 2.5rem;
+  font-weight: 700;
+  opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 14px 18px;
+    min-width: 70px;
+  }
+  .numero {
+    font-size: 2rem;
+  }
+  .dois-pontos {
+    font-size: 1.8rem;
+  }
+}
